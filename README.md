@@ -7,7 +7,7 @@
 웹과 모바일에서 쓸 수 있는 작은 제품을 만드는 **황지민**입니다.  
 아이디어와 화면 설계부터 앱·서버·공용 디자인 시스템까지 직접 다듬습니다.
 
-**[Portfolio ↗](https://jim1286.github.io/)** &nbsp; · &nbsp; **[Storybook ↗](https://jim1286.github.io/hjm-design-system/)** &nbsp; · &nbsp; [Products](#user-content-selected-products) &nbsp; · &nbsp; [Activity](#user-content-development-activity)
+**[Portfolio ↗](https://jmstudioapps.com/)** &nbsp; · &nbsp; **[Storybook ↗](https://jim1286.github.io/hjm-design-system/)** &nbsp; · &nbsp; [Products](#user-content-selected-products) &nbsp; · &nbsp; [Activity](#user-content-development-activity)
 
 ### Shared foundations
 
