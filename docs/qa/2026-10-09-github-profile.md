@@ -41,7 +41,7 @@ GitHub의 첫 이미지 관찰은 로드 직후 pending이었다. 로드 후 전
 ## 5. 기여 UI와 원천
 
 GitHub의 기본 Contributions·Contribution activity는 GitHub가 소유하는 UI여서 README로 직접 재설계할 수 없다.
-README에 자체 SVG 요약과 Recent public work를 추가했다. 실제 GitHub 달력의 날짜별 합계와 totalContributions를
+README에 자체 SVG 요약을 추가했다. 사용자의 후속 요청으로 Recent public work 제목과 PR 링크 3개는 제거했다. 실제 GitHub 달력의 날짜별 합계와 totalContributions를
 교차 확인하고 월별·최근30일·활동일을 계산한다. build_activity.py가 재사용 생성기다.
 카드는 2026-10-09의 명시된 snapshot이며 자동 갱신되지 않는다. 프로필 커밋 자체가 기본 기여 수를 늘리므로
 기본 그래프와 요약의 이후 숫자 차이는 snapshot 경계다. 이를 실시간 통계나 앱 이용 성과로 주장하지 않는다.

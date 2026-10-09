@@ -79,12 +79,6 @@ KBO 경기 일정, 선수 기록과 AI 분석을 한곳에서.<br><br>
 
 <sub>GitHub 기여 데이터 · 2026-10-09 스냅샷. 아래 기본 Contribution graph는 GitHub가 계속 갱신합니다.</sub>
 
-**Recent public work**
-
-- **Design system** — [사용 지침·화면 API·Web/Native 동작 정리](https://github.com/jim1286/hjm-design-system/pull/53)
-- **UI quality** — [실제 제품 도입에서 발견한 공용 컴포넌트 개선](https://github.com/jim1286/hjm-design-system/pull/54)
-- **Portfolio** — [공통 UI 도입과 제품·작업 방식 소개](https://github.com/jim1286/jim1286.github.io/pull/26)
-
 ### Working stack
 
 `TypeScript` &nbsp; `React / Next.js` &nbsp; `React Native / Expo`  
