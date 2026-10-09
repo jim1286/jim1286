@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" role="img" aria-labelledby="title desc">
+  <title id="title">Jimin — Product Developer</title>
+  <desc id="desc">Small ideas, useful products. Web, mobile and design systems.</desc>
+  <rect width="960" height="250" rx="20" fill="#151b27"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="40" y="37" width="25" height="4" rx="2" fill="#a2afff"/>
+    <text x="77" y="44" font-size="11" font-weight="600" letter-spacing="2.2" fill="#a2aec3">PRODUCT DEVELOPER</text>
+    <text x="38" y="113" font-size="58" font-weight="700" letter-spacing="-2" fill="#edf1f8">jimin<tspan fill="#a2afff">.</tspan></text>
+    <text x="41" y="154" font-size="22" font-weight="400" letter-spacing="-.3" fill="#edf1f8">Small ideas. Useful products.</text>
+    <text x="41" y="205" font-size="12" letter-spacing=".8" fill="#a2aec3">WEB</text>
+    <circle cx="85" cy="201" r="2" fill="#a2afff"/>
+    <text x="101" y="205" font-size="12" letter-spacing=".8" fill="#a2aec3">MOBILE</text>
+    <circle cx="163" cy="201" r="2" fill="#a2afff"/>
+    <text x="179" y="205" font-size="12" letter-spacing=".8" fill="#a2aec3">DESIGN SYSTEMS</text>
+  </g>
+  <g fill="none" stroke="#303b50" stroke-width="1">
+    <path d="M618 35v181M659 35v181M700 35v181M741 35v181M782 35v181M823 35v181M864 35v181M905 35v181"/>
+    <path d="M618 35h287M618 76h287M618 117h287M618 158h287M618 199h287"/>
+  </g>
+  <g transform="translate(635 60) rotate(-8 66 69)">
+    <rect width="132" height="138" rx="14" fill="#1c2535" stroke="#303b50"/>
+    <rect x="16" y="17" width="32" height="32" rx="9" fill="#303b66"/>
+    <path d="m29 25 10 8-10 8" fill="none" stroke="#a2afff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="16" y="64" width="83" height="6" rx="3" fill="#a2aec3" opacity=".55"/>
+    <rect x="16" y="80" width="60" height="5" rx="2.5" fill="#303b50"/>
+    <rect x="16" y="107" width="99" height="15" rx="7.5" fill="#263145"/>
+  </g>
+  <g transform="translate(764 35) rotate(8 49 88)">
+    <rect width="98" height="176" rx="19" fill="#1c2535" stroke="#303b50"/>
+    <rect x="32" y="9" width="34" height="4" rx="2" fill="#303b50"/>
+    <rect x="12" y="26" width="74" height="77" rx="11" fill="#303b66"/>
+    <path d="m27 72 15-21 13 12 16-24" fill="none" stroke="#a2afff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="14" y="116" width="56" height="5" rx="2.5" fill="#a2aec3" opacity=".55"/>
+    <rect x="14" y="130" width="43" height="4" rx="2" fill="#303b50"/>
+    <rect x="14" y="147" width="70" height="14" rx="7" fill="#a2afff"/>
+  </g>
+  <g transform="translate(871 162)">
+    <rect width="47" height="47" rx="13" fill="#1c2535" stroke="#303b50"/>
+    <rect x="12" y="12" width="9" height="9" rx="2" fill="#a2afff"/>
+    <rect x="26" y="12" width="9" height="9" rx="2" fill="#303b66"/>
+    <rect x="12" y="26" width="9" height="9" rx="2" fill="#303b66"/>
+    <circle cx="30.5" cy="30.5" r="4.5" fill="#a2afff"/>
+  </g>
+</svg>
