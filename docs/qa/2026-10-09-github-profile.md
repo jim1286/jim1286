@@ -2,59 +2,69 @@
 
 ## 1. 최종 판정
 
-통과. 확인 범위는 GitHub 프로필 소개·웹사이트·README·고정 저장소와 공개 링크의 응답이다.
-실행 시각: 2026-10-09 21:25 KST. 앱 자체 기능·스토어 출시 상태를 새로 검증한 작업은 아니다.
+GitHub 프로필 소개·웹사이트·README·고정 저장소·사진·제품 이미지·기여 요약 확인 범위 통과.
+실행 날짜: 2026-10-09 KST. 앱 자체 기능을 새로 검증한 작업은 아니다.
 
 ## 2. 대상과 이력
 
-- 대상: https://github.com/jim1286 및 jim1286/jim1286 프로필 저장소.
-- 브랜치: main. 검증한 콘텐츠 커밋: 0df3bc112e44bbca427a3aa5f109b5823941e8f1.
-- 미커밋 변경: 해당 없음. GitHub API로 main에 직접 반영했다.
-- 수행자: Codex. 핀 변경은 Aside 브라우저로 저장했다.
-- 수정 전: bio·website·프로필 README·고정 저장소가 없고 대표 공개 저장소 description이 비어 있었다.
-- 수정 후: 소개·포트폴리오 주소, 라이트/다크 배너, 디자인 시스템·대표 앱 4개·기술 스택과 공개 저장소 핀 2개를 표시한다.
+- 대상: https://github.com/jim1286 및 jim1286/jim1286, main.
+- 최초 콘텐츠 0df3bc112e44bbca427a3aa5f109b5823941e8f1, 후속 콘텐츠 93180109f0203e224d055f6e4d8b23f8acabf37b.
+- GitHub API로 main에 직접 반영했다. 고정 저장소와 사진은 Aside의 소유자 로그인 브라우저에서 저장했다.
+- bio·website·README·pins가 비어 있던 프로필에 개발자 소개·포트폴리오·공용 디자인 시스템을 연결했다.
+- 사용자 지적으로 처음 복사한 아이콘이 사이트의 옛 자산임을 확인했다. 실제 제품 설정의 원본 7개로 교체하고,
+  Diairy·Spint·Utilverse와 Unairplane Android를 포함했다. Utilverse는 개발 중으로 구분한다.
+- 사용자 제공 KakaoTalk_Photo_2026-08-03-19-03-30.png를 새 프로필 사진으로 저장하고 공개 화면에서 확인했다.
 
 ## 3. 환경과 검증 범위
 
-- macOS, Aside Browser의 소유자 로그인 화면과 Codex 인앱 브라우저의 로그아웃 화면.
-- 인앱 브라우저 캡처 크기 940 × 1294. 브라우저 버전은 별도 수집하지 않았다.
-- 공개 프로필은 다크 테마에서 직접 확인했고, 두 SVG 팔레트는 로컬 렌더로 확인했다.
-- 실제 GitHub REST/GraphQL 응답과 실제 공개 링크를 사용했다. 합성 fixture는 사용하지 않았다.
+macOS, Aside Browser 소유자 세션과 Codex 인앱 브라우저의 로그아웃 프로필.
+공개 화면은 다크 테마, 기본 940×1294px에서 직접 확인했다. 두 SVG 팔레트는 로컬 렌더로 확인했다.
+실제 REST/GraphQL과 공개 스토어·서비스 URL을 사용했다. 합성 기여 데이터는 사용하지 않았다.
 
 ## 4. 확인 결과와 문제
 
-| 시나리오 | 기대 | 실제 결과 | 판정 |
-| --- | --- | --- | --- |
-| 소유자 및 로그아웃 프로필 | 소개와 README 표시 | 배너·소개·4개 제품·기술 스택 표시 | 통과 |
-| 프로필 README | 게시 내용 일치 | REST contents와 로컬 UTF-8 원문 일치 | 통과 |
-| 저장소 고정 | 대표 공개 저장소 2개 | HJM 다음 포트폴리오 순서로 표시, GraphQL도 일치 | 통과 |
-| 대표 링크 10개 | 공개 페이지 응답 | 최종 HTTP 상태 모두 200 | 통과 |
-| 비공개 앱의 소개 | 방문자용 공개 서비스 링크 | 비공개 저장소 링크 대신 웹·스토어 링크 사용 | 통과 |
-| GitHub Markdown | 이미지·표·문구 렌더 | markdown API 성공, 공개 화면에서 5개 이미지 표시 | 통과 |
+| 시나리오 | 실제 결과 | 판정 |
+| --- | --- | --- |
+| 프로필 | 새 사진·소개·포트폴리오·README 표시 | 통과 |
+| 이미지 | 배너 1·앱 아이콘 7·활동 카드 1, 9개 모두 로드 | 통과 |
+| 고정 저장소 | HJM, portfolio 순서의 공개 저장소 2개, GraphQL 일치 | 통과 |
+| README·자산 | REST/git tree와 로컬 UTF-8/PNG/SVG 바이트 비교 | 통과 |
+| 공개 상품 | 6개 스토어 연결 제품과 개발 중 Utilverse | 통과 |
+| 기여 요약 | 실제 달력 합계 4,411·활동 215일·최근 30일 2,543·월별 총계 | 통과 |
+| 활동 링크 | GitHub의 실제 user-content ID를 사용, 구역 이동 확인 | 통과 |
+| 사진 | 원본 인물·가운데 얼굴 크롭을 공개 프로필에서 직접 확인 | 통과 |
 
-초기 Aside 일회성 REPL의 변수를 다음 호출에서 재사용할 수 없어 두 번 실패했다.
-사용자 설정은 바뀌지 않았고, 지속 브라우저 세션으로 핀을 저장한 뒤 REST/GraphQL과
-화면에서 확인했다. 제품 결함은 발견하지 않았다.
+초기 Aside 일회성 REPL 변수를 다음 호출에서 재사용할 수 없어 실패했다. 지속 세션으로 저장하고 화면·API로 확인했다.
+GitHub의 첫 이미지 관찰은 로드 직후 pending이었다. 로드 후 전체 이미지와 실제 활동 카드 표시를 확인했다.
+프로필 fragment의 기본 heading 주소가 이동하지 않는 환경이 있어 실제 GitHub user-content ID로 연결했다.
 
-## 5. 검사 결과
+## 5. 기여 UI와 원천
 
-- GitHub markdown API: 정상 렌더.
-- contents API: README byte 일치.
-- git ls-remote: main이 검증한 콘텐츠 SHA를 가리킴.
-- branches API: main 한 개. pulls API: 열린 PR 없음.
-- 공개 링크 curl: 서로 다른 URL 10개 모두 200. HTTP 응답은 앱 기능·구매·로그인 성공의 증거가 아니다.
-- SVG: 자체 호스팅 이미지, 외부 통계 이미지 서비스 및 별도 workflow 없음.
+GitHub의 기본 Contributions·Contribution activity는 GitHub가 소유하는 UI여서 README로 직접 재설계할 수 없다.
+README에 자체 SVG 요약과 Recent public work를 추가했다. 실제 GitHub 달력의 날짜별 합계와 totalContributions를
+교차 확인하고 월별·최근30일·활동일을 계산한다. build_activity.py가 재사용 생성기다.
+카드는 2026-10-09의 명시된 snapshot이며 자동 갱신되지 않는다. 프로필 커밋 자체가 기본 기여 수를 늘리므로
+기본 그래프와 요약의 이후 숫자 차이는 snapshot 경계다. 이를 실시간 통계나 앱 이용 성과로 주장하지 않는다.
+
+아이콘은 제품 설정의 launcher 원본과 SHA-256 manifest를 확인한 뒤 복사한다. build_assets.py가 사이트 동기화
+검사를 먼저 수행한다. PNG 7개와 자체 SVG를 profile repo에서 제공하며 외부 통계 이미지 서비스나 workflow는 추가하지 않았다.
+Apple lookup의 6개 앱 레코드, Diairy·Unairplane Google Play 및 웹을 확인했다. Spint Android 404 링크는 넣지 않았다.
+공개 HTTP/스토어 레코드는 로그인·설치·결제·제품 내부 동작 성공을 뜻하지 않는다.
+
+사용자 요청에 따라 [antfu](https://github.com/antfu), [DenverCoder1](https://github.com/DenverCoder1),
+[sindresorhus](https://github.com/sindresorhus)를 살펴봤다. 간결한 링크 허브·제품 소개·활동 구성을 참고했고 문구/자산은 복제하지 않았다.
+기본 기여 표시 경계는 [GitHub 안내](https://docs.github.com/en/account-and-profile/concepts/contributions-on-your-profile)를 확인했다.
 
 ## 6. 미확인 범위
 
-스마트폰 실기기, 모든 브라우저별 조합과 앱 내부 흐름은 이 프로필 꾸미기 작업에 포함하지 않았다.
-GitHub 라이트 테마의 전체 화면은 따로 검사하지 않았으며, 라이트 SVG 자체는 렌더해 확인했다.
+모든 브라우저 조합·실기기·앱 내부 흐름·GitHub 라이트 테마 전체 화면은 검사하지 않았다.
+포트폴리오 사이트는 별도 main 커밋 bfd3d09a0491b0d93c10a36c4e4d653347bd71d5에 최신 제품·아이콘·포슬이
+마케팅 사례 통합을 구현하고 로컬 검사했다. 사용자 지시로 사이트 push와 배포는 수행하지 않았다.
 
-## 7. 보관 처리와 정리
+## 7. 보관·정리
 
-프로필 README·SVG·공개 앱 아이콘·재사용 SVG 생성기와 이 리포트를 보존한다.
-임시 Markdown preview HTML, REST 원시 JSON, Quick Look QA PNG와 중간 핀 캡처는 제거한다.
-완성된 profile-preview.png는 사용자에게 전달하는 발표용 이미지로 별도 보존한다.
-현재 결과를 보여주는 용도이며 다음 프로필 개편 때 새 전달용 이미지로 대체할 수 있다.
-새 작업용 브랜치·워크트리·clone은 만들지 않았고 이 작업에 해당하는 정리 대상도 없다.
-기존 앱 checkout과 타 세션의 브랜치·실행 자원은 이 작업의 대상이 아니다.
+README·SVG·PNG·재사용 생성기와 이 리포트를 보존한다. 원시 API JSON·중간 작업 로그/사진 캡처는 제거한다.
+최종 profile-preview.png, activity-preview.png, portfolio-marketing-preview.png는 사용자 전달용 발표 이미지로
+Documents/Codex에 보존하며 공개 repo에 불필요한 캡처를 올리지 않는다. 사용자 사진 원본은 보존한다.
+새 브랜치·워크트리·clone은 만들지 않았다. profile은 main 하나, 열린 PR 없음, 관련 임시 checkout 없음.
+사이트도 main 단일 checkout이며 작업용 브랜치·워크트리 정리 대상은 없다. 자체 Vite만 종료하고 기존 앱 실행은 유지한다.
